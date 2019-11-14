@@ -3,4 +3,9 @@ let vue = new Vue({
 	data: {
 		name: "",
 	},
+	computed: {
+		valid: function() {
+			return this.name != '';
+		}
+	}
 });
