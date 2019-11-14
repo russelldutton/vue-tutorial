@@ -7,8 +7,13 @@
 	<body>
 		<div class="content">
 			<div id="app">
-				<post votes="5"></post>
-				<custom-picture url="earth.jpg" text="In case of emergency" :dims="[600,200]"></custom-picture>
+				<div>
+					<p>How many posts to display?</p>
+					<input type="number" v-model="posts">
+				</div>
+				<div class="d-flex">
+					<post v-for="post in numPosts" :key="post" :votes="post*2"></post>
+				</div>
 			</div>
 		</div>
 
