@@ -15,3 +15,12 @@ input.valid {
 	padding: 10px;
 	border-radius: 5px;
 }
+
+div.post {
+	margin-top: 50px;
+	padding: 15px;
+	border: 1pt solid #bbb;
+	border-radius: 5px;
+	box-shadow: 0 0 10px;
+	background: #fff;
+}
